@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../components/posts.dart';
 import '../components/text_feild.dart';
+import 'package:bc_new/components/drawer.dart';
+
+import '../helper/helper_methods.dart';
+
 
 
 class HomePage extends StatefulWidget {
@@ -48,7 +53,7 @@ class _HomePageState extends State<HomePage> {
     Navigator.pop(context);
     Navigator.push(
       context,
-   //   MaterialPageRoute(builder: (context) => const ProfilePage(),
+      MaterialPageRoute(builder: (context) => const ProfilePage(),
       ),
     );
   }
@@ -58,17 +63,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      //navigation bar
-      bottomNavigationBar: CurvedNavigationBar(
 
-        items: [
-          Icon(Icons.home),
-          Icon(Icons.add),
-          Icon(Icons.person),
-          Icon(Icons.message),
-          Icon(Icons.settings),
-        ],
-      ),
 
       backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
