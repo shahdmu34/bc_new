@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1079116074486",
+    "project_id": "the-wall-tut",
+    "storage_bucket": "the-wall-tut.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079116074486:android:6de8165daab5d86c91cbd7",
+        "android_client_info": {
+          "package_name": "com.example.bc_new"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOjfzdUl5yeolHwzClS-LYVlZRSD1Q2xY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079116074486:android:427efcbc2a0c932c91cbd7",
+        "android_client_info": {
+          "package_name": "com.example.thewall"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOjfzdUl5yeolHwzClS-LYVlZRSD1Q2xY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

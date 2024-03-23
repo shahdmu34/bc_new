@@ -1,0 +1,34 @@
+
+
+import 'package:flutter/cupertino.dart';
+import '../Pages/login_page.dart';
+import '../Pages/register_page.dart';
+
+class LoginOrRegister extends StatefulWidget{
+  const LoginOrRegister({super.key});
+
+  @override
+  State<StatefulWidget> createState() => _LoginOrRegisterState();
+
+}
+
+class _LoginOrRegisterState  extends State<LoginOrRegister>{
+  //initially, show the login page
+  bool showLoginPage = true;
+  //toggle between login and register page
+  void togglePages(){
+    setState((){
+      showLoginPage = !showLoginPage;
+    });
+  }
+  @override
+  Widget build(BuildContext context) {
+    if(showLoginPage){
+      return LoginPage(onTap: togglePages);
+
+    }else{
+      return RegisterPage(onTap: togglePages);
+    }
+  }
+
+}
